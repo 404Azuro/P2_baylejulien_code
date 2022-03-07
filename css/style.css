@@ -1,0 +1,84 @@
+@font-face 
+{
+    font-family: 'ralewaythin';
+    src: url('/font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{   
+    font-family: "ralewaythin", Arial, sans-serif;
+    font-size: normal;
+    color: #181818;
+}   
+
+#bloc_page
+{
+    width: 992px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre-principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 127px;
+    height: 60px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+nav li
+{
+    margin-right: 50px;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+
+/* 1ERE SECTION*/
+
+#bouton-rechercher
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img
+{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px
+}
