@@ -12,13 +12,15 @@ body
     font-family: "ralewaythin", Arial, sans-serif;
     font-size: normal;
     color: #181818;
+    font-weight: normal;
 }   
 
 #bloc_page
 {
-    width: 992px;
+    width: auto;
     margin: auto;
 }
+
 
 /* HEADER */
 
@@ -27,6 +29,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
 }
 
 #titre-principal
@@ -69,6 +72,14 @@ nav li
 
 /* 1ERE SECTION*/
 
+
+section
+{
+    margin-left: 25px;
+}
+
+
+
 #bouton-rechercher
 {
     display: flex;
@@ -76,9 +87,78 @@ nav li
     justify-content: center;
 }
 
+#site-search
+{
+    width: 140px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+button
+{
+    weight: 40px;
+    height: 30px;
+    background-color: #006cc4;
+    color: #ffffff;
+}
+
 section img
 {
     margin-top: 10px;
     width: 40px;
     height: 40px
+}
+
+
+/* Affichage tablettes */
+
+@media screen and (max-width: 992px)
+{
+    header
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* Affichage smartphone */
+
+@media screen and (max-width: 768px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 3px solid #006cc4;
+        width: 485px;
+        margin-top
+    }
+
+/* TEST traits sous barre de nav (mobile)
+
+    #trait-dessous-gauche
+    {
+        border-bottom: 3px solid #006cc4;
+        width: 384px;
+        margin-right: 384px;
+    }
+
+    #trait-dessous-droite
+    {
+        border-bottom: 3px solid #006cc4;
+        width: 384px;
+        margin-left: 384px;
+    }
+
+*/
+
+    h1
+    {
+        display: flex;
+        justify-content: center;
+    }
 }
