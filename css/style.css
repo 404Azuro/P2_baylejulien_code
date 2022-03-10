@@ -1,18 +1,9 @@
-@font-face 
-{
-    font-family: 'ralewaythin';
-    src: url('/font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/font/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body
 {   
-    font-family: "ralewaythin", Arial, sans-serif;
-    font-size: normal;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
     color: #181818;
-    font-weight: normal;
+    font-weight: 400;
 }   
 
 #bloc_page
@@ -28,22 +19,8 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-
 }
 
-#titre-principal
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#logo
-{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
 
 #logo img
 {
@@ -58,17 +35,37 @@ nav ul
 {
     list-style-type: none;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 nav li
 {
     margin-right: 50px;
-    font-size: large;
-    font-weight: 600;
+    font-size: medium;
+    font-weight: 500;
 }
 
+#hebergements :hover
+{
+    border-top: 2px solid blue;
+    padding-top: 50px;
+}
 
+#activités :hover
+{
+    border-top: 2px solid blue;
+    padding-top: 50px;
+}
+
+.menu-nav
+{
+    margin-top: 40px;
+}
+
+a:link
+{
+    text-decoration: none;
+}
 
 /* 1ERE SECTION*/
 
@@ -138,23 +135,6 @@ section img
         margin-top
     }
 
-/* TEST traits sous barre de nav (mobile)
-
-    #trait-dessous-gauche
-    {
-        border-bottom: 3px solid #006cc4;
-        width: 384px;
-        margin-right: 384px;
-    }
-
-    #trait-dessous-droite
-    {
-        border-bottom: 3px solid #006cc4;
-        width: 384px;
-        margin-left: 384px;
-    }
-
-*/
 
     h1
     {
