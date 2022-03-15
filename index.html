@@ -6,9 +6,8 @@
         <title>Booki</title>
 
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,34 +16,38 @@
         
     </head>
     <body>
-        <!-- Section 1 - Logo + Barre de navigation -->
+        <!-- Header - Logo + Barre de navigation -->
         <header>
-            <div id="titre-principal">
-                <div id="logo">
-                    <img src="images/logo/Booki.png">
-                </div>
+            <div id="logo">
+                <img src="images/logo/Booki.png">
             </div>
-
-            <nav>
-                <ul>
-                    <li id="hebergements" class="menu-nav"><a href="#">Hébergements</a></li>
-                    <li id="activités" class="menu-nav"><a href="#">Activités</a></li>
+            <nav class="navbar"></nav>
+                <ul class="navbar-menu">
+                    <li id="accomodation" class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="navbar-title">Hébergements</span>
+                        </a>
+                    </li>
+                    <li id="activities" class="navbar-item">
+                        <a href="#" class="navbar-link">
+                            <span class="navbar-title">Activités</span>
+                        </a>
+                    </li>
                 </ul>
 
             </nav>
         </header>
 
+        <!-- Section 1 -->
             <section>
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div id="bouton-rechercher"></div>
-                    <label for="site-search"><i id="logo-map" class="fa-solid fa-location-dot fa-lg"></i></label>
+                    <label for="site-search"><i class="fa-solid fa-location-dot fa-lg"></i></label>
                     <input type="search" id="site-search" name="q" aria-label="Search through site content">
                     <button>Rechercher</button>
-
-
                 </div>
             </section>
         </div>
