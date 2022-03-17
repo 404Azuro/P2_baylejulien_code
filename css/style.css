@@ -3,14 +3,12 @@ body
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     color: #181818;
-    font-weight: 400;
-}   
-
-#bloc_page
-{
+    font-weight: 500;
+    margin-left: 25px;
+    margin-right: 0px;
+    margin-top: 0px;
     width: auto;
-    margin: auto;
-}
+}   
 
 
 /* HEADER */
@@ -27,47 +25,52 @@ header
     width: 127px;
     height: 60px;
     margin-top: 35px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 20px;
 }
 
-nav ul
+.navbar-menu
 {
     list-style-type: none;
     display: flex;
-    margin-bottom: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0px;
 }
 
-nav li
+.navbar-item
 {
-    margin-right: 50px;
-    font-size: medium;
-    font-weight: 500;
-}
-
-#hebergements :hover
-{
-    border-top: 2px solid blue;
+    width: 180px;
+    text-align: center;
+    border-top: 2px solid rgb(0, 101, 252);
     padding-top: 50px;
 }
 
-#activités :hover
+.navbar-item:not(:hover)
 {
-    border-top: 2px solid blue;
-    padding-top: 50px;
+    border-top: none;
+    padding-top: 52px;
 }
 
-.menu-nav
-{
-    margin-top: 40px;
-}
-
-a:link
+.navbar-item a
 {
     text-decoration: none;
+    color: initial;
 }
 
-/* 1ERE SECTION*/
+
+.navbar-item :hover
+{     
+    color: rgb(0, 101, 252);
+}
+
+.navbar-link
+{
+    position: relative;
+    width: 100%;
+}
+
+/* SECTION 1 */
 
 
 section
@@ -75,14 +78,6 @@ section
     margin-left: 25px;
 }
 
-
-
-#bouton-rechercher
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #site-search
 {
@@ -95,28 +90,74 @@ section
 
 button
 {
-    weight: 40px;
     height: 30px;
-    background-color: #006cc4;
+    background-color: rgb(0, 101, 252);
     color: #ffffff;
-}
-
-section img
-{
-    margin-top: 10px;
-    width: 40px;
-    height: 40px
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
 /* Affichage tablettes */
 
-@media screen and (max-width: 992px)
+@media screen and ( max-width: 992px)
 {
+    body
+    {
+        margin-left: 0px;
+        font-size: large;
+    }
+    
     header
     {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    #logo
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-menu
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        padding-left: 0px;
+    }
+
+    .navbar-item
+    {
+        border-top: none;
+        width:50%;
+        border-bottom: 3px solid rgb(0, 101, 252);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 101, 252);
+        font-weight: 500;
+        font-size: 21px;
+    }
+
+    .navbar-item :hover
+    {
+        border-bottom: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+
+    .navbar-item:not(:hover)
+    {
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 23px;
     }
 }
 
@@ -125,20 +166,69 @@ section img
 
 @media screen and (max-width: 768px)
 {
+    body
+    {
+
+        font-size: medium;
+    }
+    
     header
     {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        border-bottom: 3px solid #006cc4;
-        width: 485px;
-        margin-top
     }
 
-
-    h1
+    #logo
     {
         display: flex;
         justify-content: center;
     }
+
+    #logo img
+    {
+    width: 106px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom:25px;
+    }
+
+    .navbar-menu
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-item
+    {
+        border-top: none;
+        width: 50%;
+        border-bottom: 3px solid rgb(0, 101, 252);
+        padding-bottom: 13px;
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 101, 252);
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .navbar-item :hover
+    {
+        font-weight: 500;
+    }
+
+    .navbar-item:not(:hover)
+    {
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 15px;
+        padding-top: 12px;
+    }
+
+
 }
