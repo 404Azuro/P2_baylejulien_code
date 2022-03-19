@@ -39,20 +39,39 @@
         </header>
 
         <!-- Section 1 -->
+        <main>
             <section>
                 <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h1 class="title-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div id="bouton-rechercher"></div>
-                    <label for="site-search"><i class="fa-solid fa-location-dot fa-lg"></i></label>
-                    <input type="search" id="site-search" name="q" aria-label="Search through site content">
-                    <button>Rechercher</button>
-                </div>
-                <div id="filters">
 
+                <div class="research-box">
+                    <div class="icon-location">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                    </div>
+                    <input type="search" placeholder="Marseille, France" class="research-bar">
+                    <button class="button-search" id="button-search">Rechercher</button>
+                    <button class="button-search" id="glass-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="filters">
+                    <h2 class="title-h2">Filtres</h2>
+                    <ul class="filters-ul">
+                        <li class="filters-button"><i class="fa-solid fa-money-bill-wave"><label class="button-name">Économique</label></i></li>
+                        <li class="filters-button"><i class="fa-solid fa-child"><label class="button-name">Familial</label></i></li>
+                        <li class="filters-button"><i class="fa-solid fa-heart"><label class="button-name">Romantique</label></i></li>
+                        <li class="filters-button"><i class="fa-solid fa-dog"><label class="button-name">Animaux autorisés</label></i></li>
+                    </ul>
+                </div>
+
+                <div class="informations">
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-        </div>
+
+
+        </main>
     </body>
 </html>
