@@ -78,25 +78,126 @@ section
     margin-left: 25px;
 }
 
-
-#site-search
+.research-box
 {
-    width: 140px;
-    height: 30px;
-    margin-top: 35px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
 }
 
-button
+.icon-location
 {
-    height: 30px;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;;
+}
+
+.research-bar
+{
+    width: 240px;
+
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-right: none;
+    border-left: none;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.research-bar::placeholder{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button-search
+{
+    width: 130px;
     background-color: rgb(0, 101, 252);
     color: #ffffff;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
 }
 
+#glass-icon
+{
+    display: none;
+}
+
+.filters
+{
+    display: flex;
+}
+
+.title-h2
+{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filters-ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+
+.filters-button
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    border: 2px solid #dadada;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.button-name
+{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+.filters-button i::before
+{
+    background-color: #deebff;
+    color: rgb(0, 101, 252);
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.informations
+{
+    display: flex;
+    align-items: center;
+}
+
+.informations i::before
+{
+    border: 1px solid #dadada;
+    color: rgb(0, 101, 252);
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 17px;
+}
 
 /* Affichage tablettes */
 
@@ -108,6 +209,8 @@ button
         font-size: large;
     }
     
+    /* HEADER */
+
     header
     {
         display: flex;
@@ -156,9 +259,12 @@ button
 
     .navbar-item:not(:hover)
     {
-        border-bottom: 2px solid #f2f2f2;
-        padding-bottom: 23px;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 22px;
     }
+
+    /* SECTION 1 */
+
 }
 
 
@@ -172,6 +278,8 @@ button
         font-size: medium;
     }
     
+    /* HEADER */
+
     header
     {
         display: flex;
@@ -225,10 +333,11 @@ button
 
     .navbar-item:not(:hover)
     {
-        border-bottom: 2px solid #f2f2f2;
-        padding-bottom: 15px;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 14px;
         padding-top: 12px;
     }
 
+    /* SECTION 1 */
 
 }
