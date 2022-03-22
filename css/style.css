@@ -99,7 +99,6 @@ section
 .research-bar
 {
     width: 240px;
-
     border-bottom: 1px solid #dadada;
     border-top: 1px solid #dadada;
     border-right: none;
@@ -160,7 +159,7 @@ section
     justify-content: space-evenly;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    border: 2px solid #dadada;
+    border: 2px solid #c4c4c4;
     border-radius: 30px;
     padding: 10px;
     background-color: white;
@@ -176,7 +175,7 @@ section
 
 .filters-button i::before
 {
-    background-color: #deebff;
+    background-color: #b1bfffbe;
     color: rgb(0, 101, 252);
     margin-right: 10px;
     padding: 12px;
@@ -192,11 +191,64 @@ section
 
 .informations i::before
 {
-    border: 1px solid #dadada;
+    border: 1px solid #acacac;
     color: rgb(0, 101, 252);
     padding: 8px;
     border-radius: 30px;
     font-size: 17px;
+}
+
+/* SECTION 2 */
+
+.grey
+{
+    color: grey;
+}
+
+.blue
+{
+    color: rgb(1, 82, 204);
+}
+
+article img
+{
+    height: 80px;
+    width: 200px;
+}
+
+#accomodation
+{
+    display: flex;
+}
+
+.bloc-marseille-accomodation
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 223, 223);
+    border-radius: 30px;
+}
+
+.marseille-accomodation-upper-articles
+{
+    display: flex;
+}
+
+.marseille-accomodation-lower-articles
+{
+    display: flex;
+}
+
+.bloc-most-popular
+{
+    background-color: rgb(223, 223, 223);
+    border-radius: 30px;
+}
+
+.marseille-accomodation-article
+{
+    background-color: white;
+    border-radius: 30px;
 }
 
 /* Affichage tablettes */
