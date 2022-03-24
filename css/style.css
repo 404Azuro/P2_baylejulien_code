@@ -4,7 +4,6 @@ body
     font-size: medium;
     color: #181818;
     font-weight: 500;
-    margin-left: 25px;
     margin-right: 0px;
     margin-top: 0px;
     width: auto;
@@ -25,7 +24,7 @@ header
     width: 127px;
     height: 60px;
     margin-top: 35px;
-    margin-left: 45px;
+    margin-left: 70px;
     margin-bottom: 20px;
 }
 
@@ -70,12 +69,12 @@ header
     width: 100%;
 }
 
-/* SECTION 1 */
+/* SECTION 1 - RESEARCH BAR + FILTERS */
 
 
 section
 {
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 .research-box
@@ -83,11 +82,12 @@ section
     display: flex;
     justify-content: flex-start;
     height: 50px;
+    margin-bottom: 15px;
 }
 
 .icon-location
 {
-    background-color: #dadada;
+    background-color: #e2e2e2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +127,12 @@ section
     font-family: 'Raleway', sans-serif;
 }
 
+.button-search a
+{
+    text-decoration: none;
+    color: white;
+}
+
 #glass-icon
 {
     display: none;
@@ -139,7 +145,7 @@ section
 
 .title-h2
 {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
@@ -148,39 +154,40 @@ section
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    width: 60%;
 }
 
 .filters-button
 {
     display: flex;
-    justify-content: space-evenly;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    border: 2px solid #c4c4c4;
+    align-items: center;
+    border: 2px solid #cecece;
     border-radius: 30px;
-    padding: 10px;
+    border-left: none;
+    padding: 11px;
+    padding-left: 0;
     background-color: white;
     margin-right: 20px;
 }
 
 .button-name
 {
-    font-size: 15px;
     font-family: 'Raleway', sans-serif;
+    font-size: 17px;
     background-color: white;
+    font-weight: 700;
+    padding-right: 2px;
 }
 
 .filters-button i::before
 {
-    background-color: #b1bfffbe;
+    background-color: #cdddff;
     color: rgb(0, 101, 252);
     margin-right: 10px;
-    padding: 12px;
-    border-radius: 30px;
-    font-size: 20px;
+    padding: 14px;
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .informations
@@ -189,16 +196,31 @@ section
     align-items: center;
 }
 
-.informations i::before
+i.fa-solid.fa-info
 {
+    width: 15px;
+    height: 15px;
     border: 1px solid #acacac;
     color: rgb(0, 101, 252);
-    padding: 8px;
-    border-radius: 30px;
-    font-size: 17px;
+    padding: 4px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 8px;
 }
 
-/* SECTION 2 */
+/* SECTION 2 - ACCOMODATION */
+
+.title-h3
+{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#line-up-icon
+{
+    width: 30px;
+    height: 30px;
+}
 
 .grey
 {
@@ -212,43 +234,97 @@ section
 
 .accomodation-part img
 {
-    height: 80px;
-    width: 200px;
+    height: 120px;
+    width: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: fill;
 }
 
 #accomodation
 {
     display: flex;
+    gap: 30px;
 }
 
 .bloc-marseille-accomodation
 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(223, 223, 223);
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgb(238, 238, 238);
     border-radius: 30px;
+    width: 66%;
+    padding: 30px;
+    gap: 20px;
 }
 
 .marseille-accomodation-upper-articles
 {
     display: flex;
+    gap: 30px;
 }
 
 .marseille-accomodation-lower-articles
 {
     display: flex;
-}
-
-.bloc-most-popular
-{
-    background-color: rgb(223, 223, 223);
-    border-radius: 30px;
+    gap: 30px;
 }
 
 .marseille-accomodation-article
 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
     background-color: white;
+    border-radius: 20px;
+    width: 240px;
+    box-shadow: 1px 1px 20px #acacac;
+}
+
+
+.bloc-most-popular
+{
+    background-color: rgb(238, 238, 238);
     border-radius: 30px;
+    width: 33%;
+    padding: 30px;
+    gap: 20px;
+}
+
+.marseille-accomodation-article-popular
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 360px;
+    box-shadow: 1px 1px 20px #acacac;
+    height: 120px;
+}
+
+.marseille-accomodation-article-popular img
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.description-article-popular
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stars
+{
+    display: flex;
+    flex-direction: row;
 }
 
 /* SECTION 3*/
@@ -257,6 +333,8 @@ section
 {
     height: 200px;
     width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .activities-part
@@ -268,6 +346,9 @@ section
 .marseille-activities-articles
 {
     display: flex;
+    border-radius: 30px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 
@@ -276,13 +357,16 @@ section
 footer
 {
     display: flex;
-    gap: 100px;
+    gap: 250px;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    height: 50%;
 }
 
 
 /* Affichage tablettes */
 
-@media screen and ( max-width: 992px)
+@media screen and (max-width: 992px)
 {
     body
     {
@@ -346,7 +430,37 @@ footer
 
     /* SECTION 1 */
 
+    .filters
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-h2
+    {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    ul.filters-ul
+    {
+        display:flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* FOOTER */
+
+    footer
+    {
+        flex-direction: column;
+    }
+
 }
+
 
 
 /* Affichage smartphone */
@@ -377,11 +491,11 @@ footer
 
     #logo img
     {
-    width: 106px;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-bottom:25px;
+        width: 106px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-bottom:25px;
     }
 
     .navbar-menu
@@ -420,5 +534,17 @@ footer
     }
 
     /* SECTION 1 */
+
+    #glass-icon
+    {
+        display: block;
+        border-radius: 15px;
+        width: 50px;
+    }
+
+    #button-search
+    {
+        display: none;
+    }
 
 }
