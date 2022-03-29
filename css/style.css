@@ -20,18 +20,28 @@ header
 
 #logo img
 {
-    width: 127px;
-    height: 60px;
-    margin-top: 35px;
+    width: 100px;
+    height: 47px;
+    margin-top: 40px;
     margin-left: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.title-h1
+{
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.description-title-h1
+{
+    margin-top: 0;
 }
 
 .navbar-menu
 {
     list-style-type: none;
     display: flex;
-    width: 100%;
     justify-content: flex-end;
     margin-top: 0px;
 }
@@ -40,7 +50,7 @@ header
 {
     width: 180px;
     text-align: center;
-    border-top: 2px solid rgb(0, 101, 252);
+    border-top: 2px solid #0065FC;
     padding-top: 50px;
 }
 
@@ -59,7 +69,7 @@ header
 
 .navbar-item :hover
 {     
-    color: rgb(0, 101, 252);
+    color: #0065FC;
 }
 
 .navbar-link
@@ -99,8 +109,8 @@ section
 .research-bar
 {
     width: 240px;
-    border-bottom: 1px solid #eeeeee;
-    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
     border-right: none;
     border-left: none;
     font-family: 'Raleway', sans-serif;
@@ -117,8 +127,8 @@ section
 .button-search
 {
     width: 130px;
-    background-color: rgb(0, 101, 252);
-    color: #ffffff;
+    background-color: #0065FC;
+    color: #F2F2F2;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
@@ -175,7 +185,7 @@ section
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     background-color: white;
-    font-weight: 800;
+    font-weight: 700;
     padding-right: 2px;
 }
 
@@ -213,7 +223,7 @@ i.fa-solid.fa-info
 
 .title-h3
 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 800;
 }
 
@@ -229,32 +239,26 @@ i.fa-solid.fa-info
     margin: 0;
 }
 
-#line-up-icon
-{
-    width: 30px;
-    height: 30px;
-}
-
 .grey
 {
-    color: rgb(197, 197, 197);
+    color: rgb(216, 216, 216);
 }
 
 .blue
 {
-    color: rgb(1, 82, 204);
+    color: rgb(32, 108, 221);
 }
 
 .stars
 {
     display: flex;
     flex-direction: row;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .accomodation-part img
 {
-    height: 120px;
+    height: 112px;
     width: 240px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -265,7 +269,7 @@ i.fa-solid.fa-info
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .bloc-marseille-accomodation
@@ -276,12 +280,14 @@ i.fa-solid.fa-info
     justify-content: flex-start;
     background-color: rgb(238, 238, 238);
     border-radius: 20px;
-    width: 850px;
+    width: 820px;
     padding: 20px;
+    padding-bottom: 40px;
     gap: 5px;
     padding-left: 40px;
     font-weight: 500;
     font-size: 14px;
+    margin-bottom: 40px;
 }
 
 .marseille-accomodation-upper-articles
@@ -302,7 +308,7 @@ i.fa-solid.fa-info
 {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 4px;
     background-color: white;
     border-radius: 20px;
     width: 240px;
@@ -319,10 +325,12 @@ i.fa-solid.fa-info
 .bloc-most-popular
 {
     background-color: rgb(238, 238, 238);
-    border-radius: 30px;
-    width: 400px;
-    max-width: 500px;
-    padding: 30px;
+    border-radius: 20px;
+    width: 344px;
+    padding: 40px;
+    height: 597px;
+    padding-top: 18px;
+    padding-bottom: 0;
     gap: 20px;
 }
 
@@ -334,18 +342,19 @@ i.fa-solid.fa-info
     padding: 5px;
     background-color: white;
     border-radius: 20px;
-    width: 310px;    
-    height: 120px;
+    width: 335px;    
+    height: 130px;
     margin-bottom: 30px;
 }
 
 .marseille-accomodation-article-popular img
 {
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .description-article-popular
@@ -354,13 +363,16 @@ i.fa-solid.fa-info
     flex-direction: column;
     padding: 20px;
     padding-top: 11px;
+    font-size: 14px;
+    gap: 8px;
 }
 
 .stars-popular
 {
+    margin-top: 28px;
     display: flex;
     flex-direction: row;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* SECTION 3*/
@@ -380,11 +392,12 @@ i.fa-solid.fa-info
     background-color: white;
     border-radius: 20px;
     gap: 45px;
+    flex-wrap: wrap;
 }
 
 .marseille-activities-article
 {
-    box-shadow: 1px 1px 20px rgb(204, 204, 204);
+    box-shadow: 0px 1px 8px rgb(204, 204, 204);
     border-radius: 20px;
     margin-bottom: 43px;
 }
@@ -404,17 +417,32 @@ i.fa-solid.fa-info
 
 #fort-de-pomegues img
 {
-    height: 210px;
+    height: 180px;
 }
 
 #iles-du-frioul img
 {
-    height: 500px;
+    height: 110px;
+}
+
+#parc-national-des-calanques img
+{
+    height: 390px;
+}
+
+#notre-dame-de-la-garde img
+{
+    height: 140px;
+}
+
+#parc-longchamp img
+{
+    height: 155px;
 }
 
 .title-h4-s3
 {
-    padding: 18px;
+    padding: 15px;
     margin: 0;
 }
 
@@ -555,6 +583,7 @@ footer
         width: 100%;
         background-color: white;
         padding-left: 20px;
+        margin-bottom: 0;
     }
 
     .marseille-accomodation-upper-articles
@@ -563,6 +592,7 @@ footer
         flex-wrap: wrap;
         flex-direction: column;
         gap: 12px;
+        margin-bottom: 8px;
     }
 
     .marseille-accomodation-lower-articles
@@ -570,6 +600,7 @@ footer
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        gap: 12px;
     }
 
     .marseille-accomodation-article
@@ -605,7 +636,12 @@ footer
 
     /* SECTION 3 */
 
+    .bloc-most-popular
+    {
+        width: 380px;
+    }
 
+    
 
     /* FOOTER */
 
@@ -613,6 +649,8 @@ footer
     {
         display: flex;
         flex-direction: column;
+        gap: 0;
+        padding-left: 30px;
     }
 
 }
@@ -651,7 +689,7 @@ footer
         height: 50px;
         margin-top: 15px;
         margin-left: 25px;
-        margin-bottom:25px;
+        margin-bottom: 25px;
     }
 
     .navbar-menu
@@ -659,6 +697,7 @@ footer
         width: 100%;
         display: flex;
         justify-content: space-around;
+        margin-bottom: 0;
     }
 
     .navbar-item
@@ -709,7 +748,80 @@ footer
     .title-h2
     {
         display: flex;
-        justify-content: flex-start
+        justify-content: flex-start;
+        font-size: 18px;
+    }
+
+    .research-box
+    {
+        margin-top: 35px;
+        margin-bottom: 0;
+    }
+
+    /* SECTION 3 */
+
+    .bloc-most-popular
+    {
+        width: 348px;
+        height: 530px;
+    }
+
+    #accomodation
+    {
+        gap: 0;
+    }
+
+    .bloc-marseille-activities
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marseille-activities-article
+    {
+        margin-bottom: 25px;
+    }
+
+    .marseille-activities-articles
+    {
+        gap: 0;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+
+    .marseille-activities-article img
+    {
+        width: 330px;
+    }
+
+    #vieux-port img
+    {
+        height: 130px;
+    }
+    
+    #fort-de-pomegues img
+    {
+        height: 130px;
+    }
+    
+    #iles-du-frioul img
+    {
+        height: 130px;
+    }
+    
+    #parc-national-des-calanques img
+    {
+        height: 130px;
+    }
+    
+    #notre-dame-de-la-garde img
+    {
+        height: 130px;
+    }
+    
+    #parc-longchamp img
+    {
+        height: 130px;
     }
 
 }
