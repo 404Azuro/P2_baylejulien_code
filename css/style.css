@@ -858,6 +858,16 @@ footer
         border-radius: 0;
     }
 
+    .bloc-marseille-accomodation
+    {
+
+    }
+   
+    .marseille-accomodation-article
+    {
+        width: 46%;
+    }
+
     #accomodation
     {
         gap: 0;
@@ -882,6 +892,18 @@ footer
         gap: 12px;
         margin-bottom: 8px;
     }
+
+    div.image-article-popular
+    {
+        width: 40%;
+    }
+
+    .marseille-accomodation-article-popular
+    {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
 
     .bloc-marseille-activities
     {
