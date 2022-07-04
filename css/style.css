@@ -16,7 +16,7 @@ header
     display: flex;
     justify-content: space-between;
 }
-    
+
 
 #logo img
 {
@@ -30,12 +30,12 @@ header
 .title-h1
 {
     font-size: 22px;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
-.description-title-h1
+p
 {
-    margin-top: 0;
+    font-weight: 300;
 }
 
 .navbar-menu
@@ -96,7 +96,7 @@ section
 
 .icon-location
 {
-    background-color: #eeeeee;
+    background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,12 +135,7 @@ section
     font-size: 16px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-}
-
-.button-search a
-{
-    text-decoration: none;
-    color: white;
+    height: 50px;
 }
 
 #glass-icon
@@ -172,7 +167,7 @@ section
 {
     display: flex;
     align-items: center;
-    border: 2px solid #dadada;
+    border: 2px solid #e4e4e4;
     border-radius: 30px;
     border-left: none;
     padding: 11px;
@@ -193,12 +188,12 @@ section
     font-size: 18px;
     background-color: white;
     font-weight: 700;
-    padding-right: 2px;
+    padding-right: 5px;
 }
 
 .filters-button i::before
 {
-    background-color: #cdddff;
+    background-color: #DEEBFF;
     color: rgb(0, 101, 252);
     margin-right: 10px;
     padding: 14px;
@@ -211,13 +206,14 @@ section
 {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 i.fa-solid.fa-info
 {
     width: 15px;
     height: 15px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #e4e4e4;
     color: rgb(0, 101, 252);
     padding: 4px;
     border-radius: 15px;
@@ -231,19 +227,27 @@ i.fa-solid.fa-info
 .title-h3
 {
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
-.title-h4
+.title-h4-name
 {
     margin: 0;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.title-h4-more
+{
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .price
 {
     margin: 0;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .grey
@@ -276,7 +280,7 @@ i.fa-solid.fa-info
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;  
+    gap: 40px;  
 }
 
 .card-link
@@ -292,12 +296,9 @@ i.fa-solid.fa-info
     justify-content: flex-start;
     background-color: rgb(238, 238, 238);
     border-radius: 20px;
-    width: 60%;
-    min-width: 700px;
+    width: 59%;
     padding: 20px;
-    padding-bottom: 40px;
     padding-right: 30px;
-    gap: 15px;
     padding-left: 40px;
     font-weight: 500;
     font-size: 14px;
@@ -350,6 +351,19 @@ i.fa-solid.fa-info
     margin-bottom: 20px;
 }
 
+.title-most-popular
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chart-icon
+{
+    font-size: 22px;
+}
+
+
 .marseille-accomodation-article-popular
 {
     display: flex;
@@ -386,6 +400,11 @@ div.image-article-popular img
     object-fit: cover;
 }
 
+div.articles-most-popular
+{
+    width: 97%;
+}
+
 .description-article-popular
 {
     display: flex;
@@ -414,6 +433,10 @@ div.image-article-popular img
     flex-direction: row;
 }
 
+.bloc-marseille-activities
+{
+    width: 100%;
+}
 
 .marseille-activities-articles
 {
@@ -421,9 +444,7 @@ div.image-article-popular img
     flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
-    gap: 40px;
     width: 100%;
-    margin-bottom: 60px;
 }
 
 .marseille-activities-article
@@ -443,17 +464,23 @@ div.image-article-popular img
 div.vieux-port
 {
     width: 22%;
+    margin-right: 1.6%;
+    margin-bottom: 60px;
 }
 
 div.fort-pomegues-iles-frioul
 {
     width: 22%;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
 }
 
 div.parc-calanques
 {
     width: 22%;
     min-width: 250px;
+    margin-left: 1.6%;
+    margin-right: 3.2%;
 }
 
 div.la-garde-parc-longchamp
@@ -469,6 +496,11 @@ div.la-garde-parc-longchamp
 #notre-dame-de-la-garde
 {
     margin-bottom: 43px;
+}
+
+#parc-longchamp
+{
+    margin-bottom: 60px;
 }
 
 #vieux-port img
@@ -519,7 +551,8 @@ footer
     padding: 30px;
     padding-left: 50px;
     padding-right: 0;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
     box-sizing: border-box;
 }
 
@@ -541,7 +574,7 @@ footer
 .title-h3-footer
 {
     font-size: 19px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
@@ -583,7 +616,7 @@ footer
     .navbar-item
     {
         border-top: none;
-        width:50%;
+        width: 50%;
         border-bottom: 3px solid rgb(0, 101, 252);
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -657,10 +690,11 @@ footer
 
     .bloc-marseille-accomodation
     {
-        width: 100%;
+        width: 96%;
         background-color: white;
-        padding-left: 20px;
         margin-bottom: 0;
+        padding: 0;
+        margin-left: 4%;
     }
 
     .marseille-accomodation-upper-articles
@@ -697,14 +731,29 @@ footer
         padding: 20px;
     }
 
+    .title-most-popular
+    {
+        width: 100%;
+    }
+
+    div.articles-most-popular
+    {
+        width: 98%;
+    }
+
     div.image-article-popular
     {
         width: 30%;
     }
 
+    #chart-icon
+    {
+        margin-right: 20px;
+    }
+
     .marseille-accomodation-article-popular
     {
-        width: 80%;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -718,14 +767,15 @@ footer
     div.vieux-port
     {
         width: 45%;
+        margin-left: 1.5%;
+        margin-bottom: 30px;
     }
     
     div.fort-pomegues-iles-frioul
     {
         width: 45%;
     }
-    
-    
+      
     div.parc-calanques
     {
         width: 45%;
@@ -734,6 +784,11 @@ footer
     div.la-garde-parc-longchamp
     {
         width: 45%;
+    }
+
+    #parc-longchamp
+    {
+        height: 208px;
     }
 
     /* FOOTER */
@@ -858,14 +913,23 @@ footer
         border-radius: 0;
     }
 
+    #chart-icon
+    {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1.5%;
+    }
+
     .bloc-marseille-accomodation
     {
-
+        padding: 0;
+        margin-left: 3.75%;
+        gap: 0;
     }
    
     .marseille-accomodation-article
     {
-        width: 46%;
+        width: 94%;
     }
 
     #accomodation
@@ -880,7 +944,7 @@ footer
         flex-wrap: wrap;
         flex-direction: column;
         gap: 12px;
-        margin-bottom: 8px;
+        margin-bottom: 11px;
     }
 
     .marseille-accomodation-lower-articles
@@ -900,10 +964,32 @@ footer
 
     .marseille-accomodation-article-popular
     {
-        width: 95%;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
+    .title-h4
+    {
+        font-size: 18px;
+    }
+
+    .title-h4-more
+    {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .activities-part
+    {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .title-activities
+    {
+        margin-bottom: 7px;
+        margin-top: 25px;
+    }
 
     .bloc-marseille-activities
     {
@@ -911,26 +997,63 @@ footer
         flex-direction: column;
     }
 
+    .marseille-activities-articles
+    {
+        margin-bottom: 50px;
+    }
+
     div.vieux-port
     {
-        width: 90%;
+        width: 100%;
+        margin-bottom: 26px;
+        margin-left: 0;
+        margin-right: 0;
     }
-    
+
     div.fort-pomegues-iles-frioul
     {
-        width: 90%;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
     
     div.parc-calanques
     {
-        width: 90%;
+        width: 100%;
         min-width: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
     
     div.la-garde-parc-longchamp
     {
-        width: 90%;
+        width: 100%;
     }
+
+    #fort-de-pomegues
+    {
+        margin-bottom: 26px;
+    }
+
+    #notre-dame-de-la-garde
+    {
+        margin-bottom: 26px;
+    }
+
+    #iles-du-frioul
+    {
+        margin-bottom: 26px;
+    }
+
+    #parc-national-des-calanques
+    {
+        margin-bottom: 26px;
+    }
+
+    #parc-longchamp
+{
+    margin-bottom: 0;
+}
 
     #vieux-port img
     {
@@ -960,6 +1083,23 @@ footer
     #parc-longchamp img
     {
         height: 130px;
+    }
+
+    /* FOOTER */
+
+    .about
+    {
+        width: 100%;
+    }
+
+    .our-accomodations
+    {
+        width: 100%;
+    }
+
+    .assistance
+    {
+        width: 100%;
     }
 
 }
