@@ -1,1 +1,1 @@
-Projet OpenClassrooms - Booki
+OpenClassrooms - Projet 2 - Booki
